@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 30px;
+}
+
+#cards_div {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#cards_div img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+#res_vec {
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #cards_div {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
